@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; 
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #00fa2a;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 1s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 1s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1 style="font-family:'Arial'">Computer History Time Machine</h1>
+
+<div class="slidecontainer">
+  
+    <p style="font-family:'Arial'">Choose the time you'd like to travel to:</p>
+  <input type="range" min="1920" max="2020" step="10" value="2020" class="slider" id="myRange">
+  <p>Choosen time: <span id="demo"></span></p>
+</div>
+
+<button id="btn_click" class="button"><span>Go </span></button>
+
+</body>
+</html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+    
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+
+    $('#btn_click').on('click', function() {
+        var sliderValue = document.getElementById("myRange");
+         window.location = './' + sliderValue.value + '.html';
+         });
+    </script>
+
+

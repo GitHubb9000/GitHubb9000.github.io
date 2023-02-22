@@ -1,0 +1,26 @@
+<style>
+    .section {
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: stretch space-around;
+    align-items: stretch;
+    max-height: 100%;
+    border: 1px solid red;
+    }
+    .text-content{
+        width: 50%;
+        text-align: left;
+        display: flex;
+    }
+</style>
+
+<div class="section">
+    <div class="text-content">
+        Text area Text areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText areaText area
+    </div>
+    <div>
+        Image area
+    </div>
+
+</div>

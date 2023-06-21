@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; 
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #00fa2a;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 1s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 1s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+</style>
+</head>
+<body>
+
+    
+    
+<h1 style="font-family:'Arial'">Computer History Time Machine</h1>
+
+<div class="slidecontainer">
+  
+    <p style="font-family:'Arial'"> Choose the time you'd like to travel to:</p>
+  <input type="range" min="1920" max="2020" step="10" value="2020" class="slider" id="myRange">
+  <p>Choosen time: <span id="demo"></span></p>
+</div>
+<div style="text-align:center">
+<button id="btn_click" class="button"><span>Go </span> </button> 
+    </div>
+
+
+</body>
+</html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+    
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+
+    $('#btn_click').on('click', function() {
+        var sliderValue = document.getElementById("myRange");
+         window.location = './' + sliderValue.value + '.html';
+         });
+    </script>
+
+<head>
+  <style>
+  h1 {text-align: center;}
+  p {text-align: center;}
+  div {text-align: center;}
+  </style>
+  </head>
+<br>
+<br>
+
+<div style="text-align:center">
+    <a href="What is the shape of technology today.html"> What is the shape of technology today?</a>
+
+<br>
+<br>
+<br>
+<br>
+
+<p> This is the Computer History Time Machine developed by Karthik Santhosh. This website was created to help people understand 
+    how the modern technology that we use everyday came to be by explaining the history of computers in an easy-to-understand format
+    by using a "time machine" style setup.
+</p>
+
+
+<br>
+<br>
+<br>
+<br>
+    
+<div style="text-align:center">
+<h2> Created by Karthik Santhosh in 2023 using Visual Studio Code </h2>
+</div>
+
+<h1> Reference List:</h1>
+
+<p>
+
+    
+    Aging In Place. “Technology in Our Life Today and How It Has Changed | Updated for 2020.” AgingInPlace.org, 24 Sept. 2018, aginginplace.org/technology-in-our-life-today-and-how-it-has-changed/.
+Apple Press Release. “Apple Presents IPod.” Apple Newsroom, 2018, www.apple.com/newsroom/2001/10/23Apple-Presents-iPod/.
+Augustyn, Adam. “Atomic Bomb - Development and Proliferation of Atomic Bombs | Britannica.” Encyclopædia Britannica, 2019, www.britannica.com/technology/atomic-bomb/Development-and-proliferation-of-atomic-bombs.
+<br>
+ <br>   
+    Bellis, Mary. “The History of Facebook and How It Was Invented.” ThoughtCo, ThoughtCo, 1 Sept. 2010, www.thoughtco.com/who-invented-facebook-1991791.
+<br>
+    <br>
+    Bing Staff. Bing Dictionary.
+<br>
+    <br>
+    CERN. “A Short History of the Web | CERN.” Home.cern, CERN, 23 Sept. 2019, home.cern/science/computing/birth-web/short-history-web.
+Computer History Museum. “Inventing the Transistor - CHM Revolution.” Www.computerhistory.org, www.computerhistory.org/revolution/digital-logic/12/273#:~:text=Working%20under%20Tom%20Kilburn%20at%20England%E2%80%99s%20Manchester%20University%2C. Accessed 25 May 2023.
+<br>
+    <br>
+    Drexler, Abby. “Six Advances in Medical Technology.” Techaeris, 13 Jan. 2021, techaeris.com/2021/01/13/six-advances-in-medical-technology/#:~:text=Six%20advances%20in%20medical%20technology%201%20CRISPR%20CRISPR. Accessed 2023.
+<br>
+    <br>
+    Egypt Today Staff. “Today in History: First Color Cartoon with Sound Airs.” EgyptToday, 16 Aug. 2017, www.egypttoday.com/Article/4/17669/Today-in-history-first-color-cartoon-with-sound-airs#:~:text=CAIRO%20%E2%80%93%2016%20August%202017%3A%20Today%20in%20history%2C. Accessed 25 May 2023.
+<br>
+    <br>
+    Gadgets Now. “Satellite Technology in Smartphones: How It Works, Companies Involved and How Will It Help Users.” Gadgets Now, 7 Mar. 2023, www.gadgetsnow.com/featured/satellite-technology-in-smartphones-how-it-works-companies-involved-and-how-will-it-help-users/articleshow/98479611.cms. Accessed 25 May 2023.
+<br>
+    <br>
+    Gewirtz, David. “Technology That Changed Us: The 2000s, from IPhone to Twitter.” ZDNet, 29 May 2018, www.zdnet.com/article/technology-that-changed-us-the-2000s/.
+<br>
+    <br>
+    Google Ads. “Google AdWords Is Now Google Ads - Google Ads Help.” Support.google.com, support.google.com/google-ads/answer/9028765?hl=en.
+<br>
+    <br>
+    Harms, Douglas. Techniques to Introduce Historical Computers into the Computer Science Curriculum. Jan. 2007, www.researchgate.net/publication/228957270_Techniques_to_introduce_historical_computers_into_the_computer_science_curriculum.
+History.com. “Facebook Launches.” HISTORY, A&E Television Networks, 24 Oct. 2019, www.history.com/this-day-in-history/facebook-launches-mark-zuckerberg.
+<br>
+    <br>
+    Johnson, Joseph. “Google: Ad Revenue 2001-2021 | Statista.” Statista, Statista, Feb. 2022, www.statista.com/statistics/266249/advertising-revenue-of-google/.
+Kimota. “How Many People Died in Nagasaki to the Fat Boy – Visit Nagasaki.” Visit-Nagasaki, 9 Dec. 2022, visit-nagasaki.com/how-many-people-died-in-nagasaki-to-the-fat-boy/. Accessed 25 May 2023.
+<br>
+    <br>
+    Leskin, Paige. “YouTube Is 15 Years Old. Here’s a Timeline of How YouTube Was Founded, Its Rise to Video Behemoth, and Its Biggest Controversies along Way.” Business Insider, 31 May 2021, www.businessinsider.com/history-of-youtube-in-photos-2015-10.
+Longley, Robert. “Leo Szilard, Creator of Manhattan Project, Opposed Use of Atomic Bomb.” ThoughtCo, 6 Dec. 2021, thoughtco.com/leo-szilard-4178216. Longley, Robert. “Leo Szilard, Creator of Manhattan Project, Opposed Use of Atomic Bomb.” ThoughtCo, Dec. 6, 2021, thoughtco.com/leo-szilard-4178216..
+<br>
+    <br>
+    Mane, Clarisa. “Here’s When We’ll See Driverless Cars with Level 5 Autonomy.” HotCars, 1 Sept. 2021, www.hotcars.com/level-5-autonony-driverless-cars-when/.
+McNamara, Alexander. “Future Technology: 22 Ideas about to Change Our World.” BBC Science Focus Magazine, BBC Science Focus Magazine, 2 Dec. 2016, www.sciencefocus.com/future-technology/future-technology-22-ideas-about-to-change-our-world/.
+<br>
+    <br>
+    MIT SCAIL. “The 10 Biggest Tech Breakthroughs of the 2010s | MIT CSAIL.” Www.csail.mit.edu, 17 Dec. 2019, www.csail.mit.edu/news/10-biggest-tech-breakthroughs-2010s.
+Mohsin, Maryam. “10 Youtube Stats Every Marketer Should Know in 2019 [Infographic].” Oberlo, 27 June 2019, www.oberlo.com/blog/youtube-statistics.
+<br>
+    <br>
+    Morris, Seren. “How Many People Died in Hiroshima and Nagasaki?” Newsweek, 3 Aug. 2020, www.newsweek.com/how-many-people-died-hiroshima-nagasaki-japan-second-world-war-1522276.
+<br>
+    <br>
+    Oberlo. “Most Popular Phone Brands in 2022 (by Shipments) | Oberlo.” Www.oberlo.com, www.oberlo.com/statistics/most-popular-phone-brands.
+<br>
+    <br>
+    Paul, Trey. “Best Satellite Internet Providers of 2021.” CNET, 3 May 2023, www.cnet.com/home/internet/best-satellite-internet/.
+<br>
+    <br>
+    Pew Research Center. “Mobile Fact Sheet.” Pew Research Center, Pew Research Center, 7 Apr. 2021, www.pewresearch.org/internet/fact-sheet/mobile/.
+<br>
+    <br>
+    Rodriguez McRobbie, Linda. “The ATM Is Dead. Long Live the ATM!” Smithsonian, Smithsonian.com, 8 Jan. 2015, www.smithsonianmag.com/history/atm-dead-long-live-atm-180953838/.
+<br>
+    <br>
+    Roslin Institute. “The Life of Dolly | Dolly the Sheep.” Ed.ac.uk, 2019, dolly.roslin.ed.ac.uk/facts/the-life-of-dolly/index.html.
+<br>
+    <br>
+    Schwartz, Shelly. “The Manhattan Project and the Invention of the Atomic Bomb.” ThoughtCo, ThoughtCo, 18 Aug. 2007, www.thoughtco.com/history-of-the-atomic-the-manhattan-project-1991237.
+<br>
+    <br>
+    Smith, Harrison. “Lou Ottens, Who Invented the Cassette Tape and Pioneered the CD, Dies at 94.” The Seattle Times, 10 Mar. 2021, www.seattletimes.com/business/technology/lou-ottens-who-invented-the-cassette-tape-and-pioneered-the-cd-dies-at-94/.
+<br>
+    <br>
+    Turner, Ash. “How Many Smartphones Are in the World?” BankMyCell, 2023, www.bankmycell.com/blog/how-many-phones-are-in-the-world.
+<br>
+    <br>
+    University. “5 Advancements in Transportation Technology.” Ohio University, 14 Mar. 2018, onlinemasters.ohio.edu/blog/5-advancements-in-transportation-technology/#:~:text=5%20Advancements%20in%20Transportation%20Technology%201%20The%20Internet.
+<br>
+    <br>
+    Wain, Sarah. “How Technology Has Changed in the Last 20 Years.” MyMemory Blog, 30 Dec. 2019, www.mymemory.co.uk/blog/how-technology-has-changed-in-the-last-20-years/.
+<br>
+    <br>
+    Wikipedia. “2022 in Spaceflight.” Wikipedia, 26 Oct. 2022, en.wikipedia.org/wiki/2022_in_spaceflight.
+---. “Demon Core.” Wikipedia, 8 Nov. 2020, en.wikipedia.org/wiki/Demon_core.
+<br>
+    <br>
+    Wikipedia Contributors. “Cassette Tape.” Wikipedia, Wikimedia Foundation, 6 Jan. 2020, en.wikipedia.org/wiki/Cassette_tape.
+<br>
+    <br>
+    ---. “CERN.” Wikipedia, Wikimedia Foundation, 5 Jan. 2020, en.wikipedia.org/wiki/CERN.
+<br>
+    <br>
+    ---. “Computer Mouse.” Wikipedia, Wikimedia Foundation, 27 Nov. 2018, en.wikipedia.org/wiki/Computer_mouse.
+<br>
+    <br>
+    ---. “Fat Man.” Wikipedia, Wikimedia Foundation, 5 Apr. 2019, en.wikipedia.org/wiki/Fat_Man.
+<br>
+    <br>
+    ---. “FM Broadcasting.” Wikipedia, Wikimedia Foundation, 18 Nov. 2019, en.wikipedia.org/wiki/FM_broadcasting.
+<br>
+    <br>
+    ---. “Intel 4004.” Wikipedia, Wikimedia Foundation, 31 Jan. 2020, en.wikipedia.org/wiki/Intel_4004.
+<br>
+    <br>
+    ---. “Microwave Oven.” Wikipedia, Wikimedia Foundation, 27 Feb. 2019, en.wikipedia.org/wiki/Microwave_oven.
+<br>
+    <br>
+    ---. “Mobile Phone.” Wikipedia, Wikimedia Foundation, 26 Jan. 2019, en.wikipedia.org/wiki/Mobile_phone.
+<br>
+    <br>
+    Woodford, Chris. “How Do Magnetrons Work?” Explain That Stuff, 4 Aug. 2018, www.explainthatstuff.com/how-magnetrons-work.html.
+<br>
+    <br>
+    World History. “The Invention of the Jet Engine: Frank Whittle and Hans von Ohain | World History.” World History, 9 July 2018, worldhistory.us/general/the-invention-of-the-jet-engine-frank-whittle-and-hans-von-ohain.php#:~:text=Sir%20Frank%20Whittle%20is%20often%20given%20credit%20for.
+<br>
+    <br>
+    Z, Jessica. “Sutori.” Sutori.com, Sutori, 2020, www.sutori.com/story/history-of-computer-mouse--2yUFPn6vNQBstaaz2x4FTdsy.
+<br>
+    <br>
+    </p> 
